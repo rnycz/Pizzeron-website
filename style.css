@@ -91,7 +91,7 @@ li a:hover{
     position: sticky;
     top: 0;
     width: 100%;
-    padding-top: 7px;
+    padding-top: 8px;
     z-index: 1;
 }
 .sticky-nav li a{
@@ -99,6 +99,9 @@ li a:hover{
 }
 .sticky-nav .mobile-button{
     font-size: 25px;
+}
+.sticky-nav + .content{
+    padding-top: 100px;
 }
 .mobile-nav{
     height: 100%;
