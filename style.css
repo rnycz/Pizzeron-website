@@ -80,7 +80,7 @@ li a{
     text-decoration: none;
     font-size: 20px;
     display: block;
-    padding: 25px 25px; 
+    padding: 13px 23px; 
     text-align: center;
     transition: all 0.4s;
 }
@@ -93,12 +93,6 @@ li a:hover{
     width: 100%;
     padding-top: 8px;
     z-index: 1;
-}
-.sticky-nav li a{
-    padding: 10px 10px; 
-}
-.sticky-nav .mobile-button{
-    font-size: 25px;
 }
 .sticky-nav + .content{
     padding-top: 100px;
@@ -139,7 +133,7 @@ li a:hover{
     font-size: 60px;
 }
 .mobile-button{
-    font-size:50px;
+    font-size:25px;
     cursor:pointer;
     color: white;
     background-color: black;
