@@ -71,6 +71,7 @@ ul{
     padding: 0;
     background-color: black;
     overflow: hidden;
+    height: auto;
 }
 li{
     float: left;
@@ -80,7 +81,7 @@ li a{
     text-decoration: none;
     font-size: 20px;
     display: block;
-    padding: 13px 23px; 
+    padding: 25px 25px; 
     text-align: center;
     transition: all 0.4s;
 }
@@ -93,9 +94,16 @@ li a:hover{
     width: 100%;
     padding-top: 8px;
     z-index: 1;
+    height: auto;
+}
+.sticky-nav li a{
+    padding: 10px 10px; 
+}
+.sticky-nav .mobile-button{
+    font-size: 25px;
 }
 .sticky-nav + .content{
-    padding-top: 100px;
+    padding-top: 1000px;
 }
 .mobile-nav{
     height: 100%;
@@ -133,7 +141,7 @@ li a:hover{
     font-size: 60px;
 }
 .mobile-button{
-    font-size:25px;
+    font-size:50px;
     cursor:pointer;
     color: white;
     background-color: black;
