@@ -29,7 +29,7 @@ body {
 }
 
 /*Header start*/
-.image-header {
+#image-header {
   background-image: url("images/pizza-header.jpeg");
   background-size: cover;
   position: relative;

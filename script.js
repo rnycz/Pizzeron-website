@@ -93,15 +93,15 @@ function Calculate() {
     stickyMenu();
   };
   
-  var menu = document.getElementById("navbar");
-  var sticky = menu.offsetTop;
   
-  function stickyMenu() { 
+  function stickyMenu() {
+    var menu = document.getElementById("navbar");
+    var header = document.getElementById("image-header");
+    var sticky = menu.offsetTop; 
     if (window.pageYOffset >= sticky) {
       menu.classList.add("sticky-nav")
-    } else {
-      menu.classList.remove("sticky-nav");
-    }
+      header.style.borderBottom = "5px solid black";
+    } 
   }
   
   function openModal() {
