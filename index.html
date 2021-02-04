@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>PIZZERON</title>   
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <head>
+    <title>PIZZERON</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-</head>
-<body onload="showTime()">
+  </head>
+
+  <body onload="showTime()">
     <div class="bar">
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>   
-    </div>  
-    <div class="image-header">
-        <div class="text-header">PIZZERON</div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
     </div>
-    <ul id="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#food-menu">Menu</a></li>
-        <li><a href="#coupon">Coupons</a></li>
-        <li><a href="#banner">Call Us</a></li>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#map">Map</a></li>
-        <span class="mobile-button" onclick="openMobile()">&#9776;</span>
-    </ul>   
+    <div class="image-header">
+      <div class="text-header">PIZZERON</div>
+    </div>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="#food-menu">Menu</a>
+      <a href="#coupon">Coupons</a>
+      <a href="#banner">Call Us</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#map">Map</a>
+      <span class="mobile-button" onclick="openMobile()">&#9776;</span>
+    </div>
     <div id="mobile" class="mobile-nav">
       <a href="javascript:void(0)" class="closebtn-mobile" onclick="closeMobile()">&times;</a>
       <div class="mobile-nav-content">
@@ -40,357 +42,355 @@
     <div class="content">
       <div class="row">
         <div class="banner" id="banner">
-            <div class="banner-container-left">
-                We are open:<br />
-                Mon-Thu: 12:00-23:00<br />
-                Fri-Sun: 12:00-24:00
-            </div>
+          <div class="banner-container-left">
+            We are open:<br />
+            Mon-Thu: 12:00-23:00<br />
+            Fri-Sun: 12:00-24:00
+          </div>
         </div>
         <div class="banner">
-            <div class="banner-container-right">
-                Call this number <br />
-                and order pizzas:<br />
-                +48 32 333 44 55
-            </div>
-        </div>
-    </div>
-    <p class="about">ABOUT OUR PIZZA:</p>
-    <div class="row">
-        <div class="info-pizza">
-            <i class="fas fa-cheese icons"></i><br />
-            Original Italian products<br />
-            <div class="info-pizza-container">
-                Good product will defend itself, so we do not save on ingredients.
-            </div>
-        </div>
-        <div class="info-pizza">
-            <i class="fas fa-truck icons"></i><br />
-            Fast and reliable delivery
-            <div class="info-pizza-container">
-                You can be sure that the goods will be delivered on time!
-            </div>
-        </div>
-        <div class="info-pizza">
-            <i class="fas fa-pizza-slice icons"></i><br />
-            Stone Oven Pizza
-            <div class="info-pizza-container">
-                Each of our pizza is baked in a real stone oven.
-            </div>
-        </div>
-    </div> 
-    <p class="about" id="food-menu">MENU:</p>
-    <div class="row">
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu1.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>GODFATHER</h1> 
-                    <p>Pepperoni, Italian sausage, tomato, capsicum, olives, mozzarella & oregano on a tomato & garlic sauce base</p> 
-                    <p><b>18$</b></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu2.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>PEPPERONI</h1> 
-                    <p>Lots of pepperoni & mozzarella</p> 
-                    <p><b>11$</b></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu3.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>CHICKENOS</h1> 
-                    <p>Seasoned chicken, cherry tomato, mushrooms & sliced red onions</p> 
-                    <p><b>15$</b></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu4.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>HAM & CHEESE</h1> 
-                    <p>Smoked ham & mozzarella</p>
-                    <p><b>9$</b></p> 
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu5.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>MEATLOVE</h1> 
-                    <p>Italian sausage, crispy rasher bacon, succulent chicken, pork & fennel sausage & pepperoni, BBQ</p> 
-                    <p><b>18$</b></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu6.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>PRAWNER</h1> 
-                    <p>Prawns, baby spinach, tomato, oregano & mozzarella</p> 
-                    <p><b>17$</b></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu7.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>AVOCADUS</h1> 
-                    <p>Avocado, capsicum, mushrooms, red onion, olives topped with spring onion</p> 
-                    <p><b>14$</b></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="food-menu">
-            <div class="flip-menu">
-                <div class="flip-menu-inner">
-                  <div class="flip-menu-front">
-                    <img src="images/pizza-menu8.jpeg" alt="Avatar">
-                  </div>
-                  <div class="flip-menu-back">
-                    <h1>SUPREME</h1> 
-                    <p>Pepperoni, rasher bacon, capsicum, beef, mushroom, pineapple, topped with oregano & spring onion</p>
-                    <p><b>18$</b></p> 
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p class="about" id="aboutus">ABOUT US:</p>
-    <div class="row">
-      <div class="info-us">
-        <div class="info-us-container">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat.
+          <div class="banner-container-right">
+            Call this number <br />
+            and order pizzas:<br />
+            +48 32 333 44 55
+          </div>
         </div>
       </div>
-      <div class="info-us">
-        <div class="info-opinion">
-          <p><span>John</span> Client</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="info-opinion">
-          <p><span>Adam</span> Client</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="info-counter">
-        <div class="info-counter-container">
-          <p><i class="fas fa-pizza-slice"></i></p>
-          <h3>8</h3>
-          <p>Great Pizzas</p>
-        </div>
-      </div>
-      <div class="info-counter">
-        <div class="info-counter-container">
-          <p><i class="fas fa-users"></i></p>
-          <h3>100+</h3>
-          <p>Customers every day</p>
-        </div>
-      </div>
-      <div class="info-counter">
-        <div class="info-counter-container">
-          <p><i class="fas fa-play"></i></p>
-          <h3>6</h3>
-          <p>Years of activity</p>
-        </div>
-      </div>
-    </div>
-    <div class="info-place">
+      <p class="about">ABOUT OUR PIZZA:</p>
       <div class="row">
-        <div class="info-place-container">
-          <img src="images/pizza-place1.jpeg" alt="place1">
+        <div class="info-pizza">
+          <i class="fas fa-cheese icons"></i><br />
+          Original Italian products<br />
+          <div class="info-pizza-container">
+            Good product will defend itself, so we do not save on ingredients.
+          </div>
         </div>
-        <div class="info-place-container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.            
-          </p>
-        </div>       
-      </div>
-      <div class="row">     
-        <div class="info-place-container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.            
-          </p>
+        <div class="info-pizza">
+          <i class="fas fa-truck icons"></i><br />
+          Fast and reliable delivery
+          <div class="info-pizza-container">
+            You can be sure that the goods will be delivered on time!
+          </div>
         </div>
-        <div class="info-place-container">
-          <img src="images/pizza-place1.jpeg" alt="place1">
-        </div>         
+        <div class="info-pizza">
+          <i class="fas fa-pizza-slice icons"></i><br />
+          Stone Oven Pizza
+          <div class="info-pizza-container">
+            Each of our pizza is baked in a real stone oven.
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row" id="map">
-      <div class="info-maps">
-        <h1>HERE WE ARE!</h1>
-        <p><i class="fas fa-arrow-right arrow"></i><i class="fas fa-arrow-right arrow"></i><i class="fas fa-arrow-right arrow"></i></p>
-        <p>If you have any questions feel free to contact with us below.</p>
-        <form>
-          <input type="text" id="name" class="input" placeholder="Your name" required minlength="3">
-          <input type="email" id="email" class="input" placeholder="Your email" required>
-          <textarea id="message" class="input" placeholder="Message text" required minlength="3"
-          rows="5" style="font-family: 'Bai Jamjuree';"></textarea>
-          <input type="submit" class="submit" value="Send">
-        </form>
-      </div>
-      <div class="info-maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34324.02481735211!2d19.002547038124863!3d50.25181243886804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce2336a1ccd1%3A0xb9af2a350559fabb!2sKatowice!5e0!3m2!1spl!2spl!4v1612347794373!5m2!1spl!2spl" 
-        width="100%" height="550px" frameborder="1" style="border:0;" 
-        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-    </div>
-    <p class="about" id="coupon">Coupons:</p>  
-        <div class="responsive-coupon">
-        <div class="coupon">
-            <div class="container-coupon">
-              <h3>PEPPERONI</h3>
-            </div>
-            <img src="images/pizza-menu2.jpeg" alt="coupon1" class="coupon-img">
-            <div class="container-coupon" style="background-color:white;">
-              <h2 style="text-align: center;"><b>20% OFF </b></h2> 
-            </div>
-            <div class="container-coupon">
-              <p>Promo Code: <span class="promo-code">PEP20</span></p>
-              <p id="expire-coupon1"></p>
+      <p class="about" id="food-menu">MENU:</p>
+      <div class="row">
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu1.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>GODFATHER</h1>
+                <p>Pepperoni, Italian sausage, tomato, capsicum, olives, mozzarella & oregano on a tomato & garlic sauce base</p>
+                <p><b>18$</b></p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="responsive-coupon">
-            <div class="coupon">
-                <div class="container-coupon">
-                  <h3>PRAWNER</h3>
-                </div>
-                <img src="images/pizza-menu6.jpeg" alt="coupon2" class="coupon-img">
-                <div class="container-coupon" style="background-color:white;">
-                  <h2 style="text-align: center;"><b>20% OFF </b></h2> 
-                </div>
-                <div class="container-coupon">
-                  <p>Promo Code: <span class="promo-code">PRA20</span></p>
-                  <p id="expire-coupon2"></p>
-                </div>
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu2.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>PEPPERONI</h1>
+                <p>Lots of pepperoni & mozzarella</p>
+                <p><b>11$</b></p>
+              </div>
             </div>
-        </div>     
-    <div class="row">
-      <p class="tip-calc-desc">
-        Maybe you want to tip us? You just don't know what amount would be appropriate.
-        Our tip calculator comes in handy. It will certainly help you. Think about it :)
-      </p>        
+          </div>
+        </div>
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu3.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>CHICKENOS</h1>
+                <p>Seasoned chicken, cherry tomato, mushrooms & sliced red onions</p>
+                <p><b>15$</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu4.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>HAM & CHEESE</h1>
+                <p>Smoked ham & mozzarella</p>
+                <p><b>9$</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu5.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>MEATLOVE</h1>
+                <p>Italian sausage, crispy rasher bacon, succulent chicken, pork & fennel sausage & pepperoni, BBQ</p>
+                <p><b>18$</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu6.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>PRAWNER</h1>
+                <p>Prawns, baby spinach, tomato, oregano & mozzarella</p>
+                <p><b>17$</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu7.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>AVOCADUS</h1>
+                <p>Avocado, capsicum, mushrooms, red onion, olives topped with spring onion</p>
+                <p><b>14$</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-menu">
+          <div class="flip-menu">
+            <div class="flip-menu-inner">
+              <div class="flip-menu-front">
+                <img src="images/pizza-menu8.jpeg" alt="Avatar">
+              </div>
+              <div class="flip-menu-back">
+                <h1>SUPREME</h1>
+                <p>Pepperoni, rasher bacon, capsicum, beef, mushroom, pineapple, topped with oregano & spring onion</p>
+                <p><b>18$</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="about" id="aboutus">ABOUT US:</p>
+      <div class="row">
+        <div class="info-us">
+          <div class="info-us-container">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        <div class="info-us">
+          <div class="info-opinion">
+            <p><span>John</span> Client</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="info-opinion">
+            <p><span>Adam</span> Client</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="info-counter">
+          <div class="info-counter-container">
+            <p><i class="fas fa-pizza-slice"></i></p>
+            <h3>8</h3>
+            <p>Great Pizzas</p>
+          </div>
+        </div>
+        <div class="info-counter">
+          <div class="info-counter-container">
+            <p><i class="fas fa-users"></i></p>
+            <h3>100+</h3>
+            <p>Customers every day</p>
+          </div>
+        </div>
+        <div class="info-counter">
+          <div class="info-counter-container">
+            <p><i class="fas fa-play"></i></p>
+            <h3>6</h3>
+            <p>Years of activity</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-place">
+        <div class="row">
+          <div class="info-place-container">
+            <img src="images/pizza-place1.jpeg" alt="place1">
+          </div>
+          <div class="info-place-container">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-place-container">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="info-place-container">
+            <img src="images/pizza-place1.jpeg" alt="place1">
+          </div>
+        </div>
+      </div>
+      <div class="row" id="map">
+        <div class="info-maps">
+          <h1>HERE WE ARE!</h1>
+          <p><i class="fas fa-arrow-right arrow"></i><i class="fas fa-arrow-right arrow"></i><i class="fas fa-arrow-right arrow"></i></p>
+          <p>If you have any questions feel free to contact with us below.</p>
+          <form>
+            <input type="text" id="name" class="input" placeholder="Your name" required minlength="3">
+            <input type="email" id="email" class="input" placeholder="Your email" required>
+            <textarea id="message" class="input" placeholder="Message text" required minlength="3" rows="5" style="font-family: 'Bai Jamjuree';"></textarea>
+            <input type="submit" class="submit" value="Send">
+          </form>
+        </div>
+        <div class="info-maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34324.02481735211!2d19.002547038124863!3d50.25181243886804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce2336a1ccd1%3A0xb9af2a350559fabb!2sKatowice!5e0!3m2!1spl!2spl!4v1612347794373!5m2!1spl!2spl" width="100%" height="550px" frameborder="1" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <p class="about" id="coupon">Coupons:</p>
+      <div class="responsive-coupon">
+        <div class="coupon">
+          <div class="container-coupon">
+            <h3>PEPPERONI</h3>
+          </div>
+          <img src="images/pizza-menu2.jpeg" alt="coupon1" class="coupon-img">
+          <div class="container-coupon" style="background-color:white;">
+            <h2 style="text-align: center;"><b>20% OFF </b></h2>
+          </div>
+          <div class="container-coupon">
+            <p>Promo Code: <span class="promo-code">PEP20</span></p>
+            <p id="expire-coupon1"></p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-coupon">
+        <div class="coupon">
+          <div class="container-coupon">
+            <h3>PRAWNER</h3>
+          </div>
+          <img src="images/pizza-menu6.jpeg" alt="coupon2" class="coupon-img">
+          <div class="container-coupon" style="background-color:white;">
+            <h2 style="text-align: center;"><b>20% OFF </b></h2>
+          </div>
+          <div class="container-coupon">
+            <p>Promo Code: <span class="promo-code">PRA20</span></p>
+            <p id="expire-coupon2"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="tip-calc-desc">
+          Maybe you want to tip us? You just don't know what amount would be appropriate.
+          Our tip calculator comes in handy. It will certainly help you. Think about it :)
+        </p>
         <button id="modalBtn" onclick="openModal()">Tip Calculator</button>
         <div id="modalDiv" class="modal">
-            <div class="modal-content">
-                <span class="close-modal" style="font-size: 50px;" onclick="closeModal()">&times;</span>
-                <div class="calc">     
-                    <h2 style="text-align: center;">Tip Calculator</h2>
-                    <form>
-                        <label for="billAmount">How much is your bill? $$$</label>
-                        <input type="number" class="input" id="billAmount" placeholder="Your bill amount...">
-                        <label for="serviceRate">How do you rate the service?</label>
-                        <select id="serviceRate" class="input">
-                            <option disabled selected value="1">--Choose an option--</option>
-                            <option value="0.2">Outstanding (20% of bill)</option>
-                            <option value="0.15">Good (15% of bill)</option>
-                            <option value="0.1">OK (10% of bill)</option>
-                            <option value="0">I do not want to tip</option>
-                        </select>
-                        <label for="peopleNumber">How many people are sharing the bill?</label>
-                        <input type="number" class="input" id="peopleNumber" placeholder="Number of people">
-                        <button type="button" class="submit" id="calculate" onclick="Calculate()">Calculate</button>
-                    </form>
-                    <p id="total-tip"></p> 
-                </div>  
+          <div class="modal-content">
+            <span class="close-modal" style="font-size: 50px;" onclick="closeModal()">&times;</span>
+            <div class="calc">
+              <h2 style="text-align: center;">Tip Calculator</h2>
+              <form>
+                <label for="billAmount">How much is your bill? $$$</label>
+                <input type="number" class="input" id="billAmount" placeholder="Your bill amount...">
+                <label for="serviceRate">How do you rate the service?</label>
+                <select id="serviceRate" class="input">
+                  <option disabled selected value="1">--Choose an option--</option>
+                  <option value="0.2">Outstanding (20% of bill)</option>
+                  <option value="0.15">Good (15% of bill)</option>
+                  <option value="0.1">OK (10% of bill)</option>
+                  <option value="0">I do not want to tip</option>
+                </select>
+                <label for="peopleNumber">How many people are sharing the bill?</label>
+                <input type="number" class="input" id="peopleNumber" placeholder="Number of people">
+                <button type="button" class="submit" id="calculate" onclick="Calculate()">Calculate</button>
+              </form>
+              <p id="total-tip"></p>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="footer">          
-            <div class="column-footer">
-                <h2>PIZZERON &copy;</h2>
-                <p>+48 32 333 44 55<br />
-                  Mon-Thu: 12:00-23:00<br />
-                  Fri-Sun: 12:00-24:00
-                </p>
-                <p id="timer"></p>
-            </div>
-            <div class="column-footer">
-              <p>
-                <a href="index.html">Home</a><br />
-                <a href="#food-menu">Menu</a><br />
-                <a href="#coupon">Coupons</a><br />
-                <a href="#banner">Call Us</a><br />
-                <a href="#aboutus">About Us</a>
-              </p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="footer">
+          <div class="column-footer">
+            <h2>PIZZERON &copy;</h2>
+            <p>+48 32 333 44 55<br />
+              Mon-Thu: 12:00-23:00<br />
+              Fri-Sun: 12:00-24:00
+            </p>
+            <p id="timer"></p>
+          </div>
+          <div class="column-footer">
+            <p>
+              <a href="index.html">Home</a><br />
+              <a href="#food-menu">Menu</a><br />
+              <a href="#coupon">Coupons</a><br />
+              <a href="#banner">Call Us</a><br />
+              <a href="#aboutus">About Us</a>
+            </p>
+          </div>
         </div>
+      </div>
+      <hr style="margin: 0; border: 0.5px solid grey" />
+      <div class="author">
+        Website made by <a href="https://github.com/rnycz" target="_blank">Radosław Nycz</a>
+        for educational purposes.<br />
+        You are not ordering pizza here :(
+      </div>
     </div>
-    <hr style="margin: 0; border: 0.5px solid grey"/>
-    <div class="author">
-      Website made by <a href="https://github.com/rnycz" target="_blank">Radosław Nycz</a>
-      for educational purposes.<br />
-      You are not ordering pizza here :(
-    </div> 
-    </div>
-</body>   
+  </body>
+
 </html>
