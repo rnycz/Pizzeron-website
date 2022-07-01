@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>PIZZERON</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
-
-  <body onload="showTime()">
+  <body>
     <div class="bar">
       <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
@@ -26,10 +23,10 @@
       <a href="#banner">Call Us</a>
       <a href="#aboutus">About Us</a>
       <a href="#map">Map</a>
-      <span class="mobile-button" onclick="openMobile()">&#9776;</span>
+      <span class="mobile-button" id="openMobile">&#9776;</span>
     </div>
     <div id="mobile" class="mobile-nav">
-      <a href="javascript:void(0)" class="closebtn-mobile" onclick="closeMobile()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn-mobile" id="closeMobile">&times;</a>
       <div class="mobile-nav-content">
         <a href="index.html">Home</a>
         <a href="#food-menu" class="isClicked">Menu</a>
@@ -337,10 +334,10 @@
           Maybe you want to tip us? You just don't know what amount would be appropriate.
           Our tip calculator comes in handy. It will certainly help you. Think about it :)
         </p>
-        <button id="modalBtn" onclick="openModal()">Tip Calculator</button>
+        <button id="modalBtn">Tip Calculator</button>
         <div id="modalDiv" class="modal">
           <div class="modal-content">
-            <span class="close-modal" style="font-size: 50px;" onclick="closeModal()">&times;</span>
+            <span class="close-modal" id="closeModal" style="font-size: 50px;">&times;</span>
             <div class="calc">
               <h2 style="text-align: center;">Tip Calculator</h2>
               <form>
@@ -356,7 +353,7 @@
                 </select>
                 <label for="peopleNumber">How many people are sharing the bill?</label>
                 <input type="number" class="input" id="peopleNumber" placeholder="Number of people">
-                <button type="button" class="submit" id="calculate" onclick="Calculate()">Calculate</button>
+                <button type="button" class="submit" id="calculate">Calculate</button>
               </form>
               <p id="total-tip"></p>
             </div>
@@ -391,6 +388,6 @@
         You are not ordering pizza here :(
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
-
 </html>
